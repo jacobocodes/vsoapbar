@@ -1,0 +1,22 @@
+{
+  "name": "vsoapbar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "shopify": "shopify",
+    "list-themes": "shopify theme list",
+    "dev": "shopify theme dev",
+    "pull": "shopify theme pull"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://local_proxy@127.0.0.1:41729/git/jacobocodes/vsoapbar"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shopify/cli": "^4.5.1"
+  }
+}

@@ -281,6 +281,7 @@
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {%- if settings.gentle_motion -%}
       {{ 'component-earthy-motion.css' | asset_url | stylesheet_tag }}
+      <script src="{{ 'earthy-motion.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
 

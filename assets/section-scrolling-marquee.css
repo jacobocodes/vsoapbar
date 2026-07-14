@@ -1,0 +1,79 @@
+/* Scrolling ribbon — an endlessly sliding strip of short phrases. */
+
+.scrolling-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-marquee__track {
+  display: flex;
+  width: max-content;
+  animation: scrolling-marquee-slide var(--marquee-duration, 25s) linear infinite;
+}
+
+/* Pause the ribbon while the visitor's mouse rests on it */
+.scrolling-marquee:hover .scrolling-marquee__track {
+  animation-play-state: paused;
+}
+
+.scrolling-marquee__content {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.scrolling-marquee__item {
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.scrolling-marquee--uppercase .scrolling-marquee__item {
+  text-transform: uppercase;
+}
+
+.scrolling-marquee__sep {
+  margin: 0 1.6rem;
+  opacity: 0.6;
+}
+
+.scrolling-marquee--small .scrolling-marquee__item {
+  font-size: 1.2rem;
+}
+
+.scrolling-marquee--medium .scrolling-marquee__item {
+  font-size: 1.6rem;
+}
+
+.scrolling-marquee--large .scrolling-marquee__item {
+  font-size: 2.2rem;
+}
+
+@media screen and (min-width: 750px) {
+  .scrolling-marquee--small .scrolling-marquee__item {
+    font-size: 1.4rem;
+  }
+
+  .scrolling-marquee--medium .scrolling-marquee__item {
+    font-size: 1.8rem;
+  }
+
+  .scrolling-marquee--large .scrolling-marquee__item {
+    font-size: 2.8rem;
+  }
+}
+
+@keyframes scrolling-marquee-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Visitors who prefer reduced motion see a still ribbon */
+@media (prefers-reduced-motion: reduce) {
+  .scrolling-marquee__track {
+    animation: none;
+  }
+}

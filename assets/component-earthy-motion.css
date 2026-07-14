@@ -36,4 +36,31 @@
   .card-wrapper:hover .card__media img {
     transform: scale(1.05);
   }
+
+  /* Hero headline words rise into place one by one (spans added by earthy-motion.js) */
+  .earthy-word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(0.55em);
+    animation: earthy-word-rise 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+    animation-delay: var(--word-delay, 0.15s);
+  }
+
+  @keyframes earthy-word-rise {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Product cards keep their own smoothing while the mouse tilts them */
+  [data-earthy-tilt] .card {
+    transition: transform 0.2s ease-out;
+  }
+
+  /* Big photos drift as you scroll (earthy-motion.js); keep them inside their frame */
+  .banner__media,
+  .image-with-text__media {
+    overflow: hidden;
+  }
 }

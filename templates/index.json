@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "From the earth’s finest botanicals, to your hands",
-            "heading_size": "h0"
+            "heading_size": "hxl"
           }
         },
         "hero_text": {
@@ -41,7 +41,7 @@
       "settings": {
         "image_overlay_opacity": 0,
         "image_height": "large",
-        "image_behavior": "ambient",
+        "image_behavior": "none",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": true,
@@ -49,6 +49,37 @@
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": false
+      }
+    },
+    "word_ribbon": {
+      "type": "scrolling-marquee",
+      "blocks": {
+        "ribbon_1": {
+          "type": "phrase",
+          "settings": { "text": "Handmade in small batches" }
+        },
+        "ribbon_2": {
+          "type": "phrase",
+          "settings": { "text": "100% natural ingredients" }
+        },
+        "ribbon_3": {
+          "type": "phrase",
+          "settings": { "text": "Gentle on skin" }
+        },
+        "ribbon_4": {
+          "type": "phrase",
+          "settings": { "text": "Plant-based & palm-free" }
+        }
+      },
+      "block_order": ["ribbon_1", "ribbon_2", "ribbon_3", "ribbon_4"],
+      "settings": {
+        "speed": 25,
+        "text_size": "medium",
+        "uppercase": true,
+        "separator": "•",
+        "color_scheme": "scheme-4",
+        "padding_top": 16,
+        "padding_bottom": 16
       }
     },
     "featured_soaps": {
@@ -102,7 +133,7 @@
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "image_behavior": "ambient",
+        "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
@@ -162,5 +193,5 @@
       }
     }
   },
-  "order": ["hero_banner", "featured_soaps", "our_story", "why_our_soap"]
+  "order": ["hero_banner", "word_ribbon", "featured_soaps", "our_story", "why_our_soap"]
 }

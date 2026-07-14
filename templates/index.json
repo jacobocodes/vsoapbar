@@ -9,20 +9,62 @@
  */
 {
   "sections": {
-    "featured-collection": {
+    "hero_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "hero_heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "From the earth’s finest botanicals, to your hands",
+            "heading_size": "h0"
+          }
+        },
+        "hero_text": {
+          "type": "text",
+          "settings": {
+            "text": "Handmade soap in small batches — natural, gentle, and kind to your skin.",
+            "text_style": "body"
+          }
+        },
+        "hero_buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all soaps",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["hero_heading", "hero_text", "hero_buttons"],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "image_behavior": "ambient",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "featured_soaps": {
       "type": "featured-collection",
       "settings": {
         "collection": "all",
         "products_to_show": 4,
-        "title": "Featured products",
-        "heading_size": "h2",
+        "title": "Our soaps",
+        "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 4,
         "enable_desktop_slider": false,
         "full_width": false,
-        "show_view_all": false,
+        "show_view_all": true,
         "view_all_style": "solid",
         "color_scheme": "scheme-1",
         "image_ratio": "square",
@@ -30,103 +72,95 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "none",
+        "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 56,
         "padding_bottom": 68
       }
     },
-    "featured_collection_E8Ka7m": {
-      "type": "featured-collection",
-      "name": "    From the earth’s finest botanicals to your hand",
+    "our_story": {
+      "type": "image-with-text",
+      "blocks": {
+        "story_heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our story",
+            "heading_size": "h1"
+          }
+        },
+        "story_text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every bar starts in our kitchen, poured by hand in small batches with plant-based oils and botanicals we trust. No shortcuts, no harsh stuff — just honest soap made slowly, the way it should be.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": ["story_heading", "story_text"],
       "settings": {
-        "collection": "all",
-        "products_to_show": 4,
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "ambient",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 56,
-        "padding_bottom": 68
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "featured_collection_3TcNEd": {
-      "type": "featured-collection",
+    "why_our_soap": {
+      "type": "multicolumn",
+      "blocks": {
+        "why_natural": {
+          "type": "column",
+          "settings": {
+            "title": "Natural ingredients",
+            "text": "<p>Plant-based oils and real botanicals — nothing your skin doesn’t need.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "why_handmade": {
+          "type": "column",
+          "settings": {
+            "title": "Handmade in small batches",
+            "text": "<p>Poured, cut, and cured by hand, so every bar gets the care it deserves.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "why_gentle": {
+          "type": "column",
+          "settings": {
+            "title": "Gentle on skin",
+            "text": "<p>Mild, moisturizing, and kind — made for everyday hands and sensitive skin.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["why_natural", "why_handmade", "why_gentle"],
       "settings": {
-        "collection": "all",
-        "products_to_show": 4,
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
+        "title": "Why our soap?",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "circle",
+        "button_label": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
         "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 56,
-        "padding_bottom": 68
-      }
-    },
-    "featured_collection_NH4Dee": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "all",
-        "products_to_show": 4,
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 56,
-        "padding_bottom": 68
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 48,
+        "padding_bottom": 60
       }
     }
   },
-  "order": [
-    "featured-collection",
-    "featured_collection_E8Ka7m",
-    "featured_collection_3TcNEd",
-    "featured_collection_NH4Dee"
-  ]
+  "order": ["hero_banner", "featured_soaps", "our_story", "why_our_soap"]
 }

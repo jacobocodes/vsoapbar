@@ -228,6 +228,13 @@
         "default": "default",
         "label": "t:settings_schema.animations.settings.animations_hover_elements.label",
         "info": "t:settings_schema.animations.settings.animations_hover_elements.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "gentle_motion",
+        "label": "Gentle motion",
+        "info": "Adds soft hover effects to buttons and product photos. Turns off automatically for visitors who prefer reduced motion.",
+        "default": true
       }
     ]
   },

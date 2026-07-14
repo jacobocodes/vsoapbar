@@ -19,7 +19,7 @@
     "spacing_grid_horizontal": 40,
     "spacing_grid_vertical": 40,
     "animations_reveal_on_scroll": true,
-    "animations_hover_elements": "none",
+    "animations_hover_elements": "vertical-lift",
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 55,
     "buttons_radius": 10,
@@ -146,44 +146,44 @@
         "settings": {
           "background": "#fdfbf7",
           "background_gradient": "linear-gradient(180deg, rgba(240, 244, 236, 1), rgba(241, 235, 226, 1) 100%)",
-          "text": "#2e2a39",
-          "button": "#9b046f",
+          "text": "#363428",
+          "button": "#4a5d43",
           "button_label": "#fdfbf7",
-          "secondary_button_label": "#2e2a39",
-          "shadow": "#2e2a39"
+          "secondary_button_label": "#363428",
+          "shadow": "#363428"
         }
       },
       "scheme-3": {
         "settings": {
-          "background": "#2e2a39",
+          "background": "#3a4034",
           "background_gradient": "",
           "text": "#fdfbf7",
           "button": "#fdfbf7",
-          "button_label": "#2e2a39",
+          "button_label": "#3a4034",
           "secondary_button_label": "#fdfbf7",
-          "shadow": "#2e2a39"
+          "shadow": "#363428"
         }
       },
       "scheme-4": {
         "settings": {
-          "background": "#636B52",
-          "background_gradient": "",
+          "background": "#636b52",
+          "background_gradient": "linear-gradient(160deg, rgba(99, 107, 82, 1), rgba(85, 95, 72, 1) 100%)",
           "text": "#fdfbf7",
           "button": "#fdfbf7",
-          "button_label": "#908072",
+          "button_label": "#4a5d43",
           "secondary_button_label": "#fdfbf7",
-          "shadow": "#2e2a39"
+          "shadow": "#363428"
         }
       },
       "scheme-5": {
         "settings": {
-          "background": "#5e3653",
-          "background_gradient": "linear-gradient(320deg, rgba(134, 16, 106, 1), rgba(94, 54, 83, 1) 100%)",
+          "background": "#a0603c",
+          "background_gradient": "linear-gradient(320deg, rgba(178, 116, 74, 1), rgba(160, 96, 60, 1) 100%)",
           "text": "#fdfbf7",
           "button": "#fdfbf7",
-          "button_label": "#5e3653",
+          "button_label": "#a0603c",
           "secondary_button_label": "#fdfbf7",
-          "shadow": "#2e2a39"
+          "shadow": "#363428"
         }
       }
     }

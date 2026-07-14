@@ -1,0 +1,39 @@
+/* Gentle motion — soft, calm micro-interactions for V Soap Bar.
+   Loaded only when the "Gentle motion" theme setting is enabled.
+   All effects are disabled automatically for visitors who prefer reduced motion. */
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Buttons: smooth, gentle lift and soften on hover */
+  .button,
+  .shopify-challenge__button,
+  .customer button {
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+  }
+
+  .button:not([disabled]):hover,
+  .shopify-challenge__button:hover,
+  .customer button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+    box-shadow: 0 0.6rem 1.4rem rgba(54, 52, 40, 0.18);
+  }
+
+  /* Underlined links ease their color change */
+  .link,
+  .full-unstyled-link {
+    transition: color 0.25s ease;
+  }
+
+  /* Product cards: photo breathes slightly larger on hover */
+  .card__media {
+    overflow: hidden;
+  }
+
+  .card__media img {
+    transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  .card-wrapper:hover .card__media img {
+    transform: scale(1.05);
+  }
+}
